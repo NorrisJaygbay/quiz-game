@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Questions</title>
+    <link rel="stylesheet" href="htmlquiz.css">
+</head>
+<body>
+    <!-- section for  the entire control -->
+    <section class="app">
+        <div class="score-cont">
+            <h1>Simple HTML Quiz App</h1>
+            <div class="score-counter-cont">
+                <p class="score-reduce">10</p>
+                <p>/</p>
+                <p>10</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <section class="quiz">
+            <!-- section for the question -->
+            <div>
+                <h2 id="question">Question goes here</h2>
+            </div>
+            <!-- section for the answer -->
+            <div id="answer-buttons">
+                <button class="btn" onclick="selectAnswer(0)">Answer 1</button>
+                <button class="btn" onclick="selectAnswer(1)">Answer 2</button>
+                <button class="btn" onclick="selectAnswer(2)">Answer 3</button>
+                <button class="btn" onclick="selectAnswer(3)">Answer 4</button>
+            </div>
+            <div class="btn-next-control">
+                <button class="btn-next" onclick="nextQuestion()">Next</button>
+            </div>
+        </section>
+
+        <!-- section to display the score when the game ends -->
+        <section class="score-section" style="display: none;">
+            <h2 id="score"></h2>
+            <button class="btn-restart" onclick="startQuiz()">Restart</button>
+            <button class="btn-review" onclick="reviewAnswers()">Review Answers</button>
+        </section>
+
+        <!-- section to review your answer when the game ends -->
+        <section class="review-section">
+            <h2>Review Your Answers</h2>
+            <div id="review-container"></div>
+            <button class="btn-restart" onclick="startQuiz()">Restart</button>
+        </section>
+
+        <!-- to go back and select category -->
+       <div class="change-Category">
+        <a href="index.html">Change Category</a>
+       </div>
+
+    </section>
+
+
+    <script src="htmlquiz.js"></script>
+</body>
+</html>
