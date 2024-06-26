@@ -13,6 +13,7 @@ body {
     height: 450px;
     overflow: hidden;
     background: #fff;
+    /* box-shadow: 0 0 10px #fff; */
     margin: 20px auto;
     border-radius: 10px;
     display: flex;
